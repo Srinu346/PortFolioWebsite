@@ -15,7 +15,7 @@ export const StarBackground = ()=>{
 
         window.addEventListener("resize",handleResize);
 
-        return ()=>window.removeEventListener("resize");
+        return ()=>window.removeEventListener("resize",handleResize);
     },[]);
 
   const generateStars = () => {
@@ -47,9 +47,9 @@ export const StarBackground = ()=>{
     for (let i = 0; i < numberOfMeteors ; i++) {
       newMeteors.push({
         id: i,
-        size: Math.random() * 2 + 1,
+        size: Math.random() * 4 + 1,
         x: Math.random() * 100,
-        y: Math.random() * 20,
+        y: Math.random() * 25,
         delay: Math.random() * 15,
         animationDuration: Math.random() * 3 + 3,
       });
