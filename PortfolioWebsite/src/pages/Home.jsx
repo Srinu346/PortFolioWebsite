@@ -6,6 +6,7 @@ import { AboutSection } from "../components/AboutSection"
 import { SkillSection } from "../components/SkillSection"
 import { ProjectSection } from "../components/ProjectSection"
 import { ContactSection } from "../components/ContactSection"
+import { Footer } from "../components/Footer"
 
 export const Home=()=>{
     return (
@@ -31,7 +32,7 @@ export const Home=()=>{
             </main>
 
             {/*Footer*/}
-
+            <Footer />
 
         </div>
     )
